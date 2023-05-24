@@ -121,3 +121,10 @@ function TrySort() {
 TrySort([3, 2, 1, 12, 13, 11]) 
 
 
+// let data = new Promise((resolve) => {
+//   setTimeout(() => {
+//        resolve("Found a data.")
+//   }, 3000)
+//   })
+  
+//   console.log(data)
