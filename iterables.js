@@ -1,3 +1,8 @@
+ 
+
+
+
+
 // const arr = ["L", "B", "P"]
 // for (let i = 0; i < arr.length; i++) {
 //   console.log(arr[i], i)
