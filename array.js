@@ -1,7 +1,7 @@
 
 
 const a = ["a", "b", "c", "d"]
-const b = ["e", "f", "g", "i"]
+
 
 
 
