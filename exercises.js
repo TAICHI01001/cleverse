@@ -503,28 +503,68 @@
 // console.log(Member(5, [1, 3, 7, 12]))
 // console.log(Member("john", ["jane", "jim", "john"]))
 
-function mode(arr) {
-  if (arr.length === 0) {
-    return null;
-  }// Count the occurrences of each element in the array
-  const countMap = {};
-  let maxCount = 0;
-  let modeValue = null;
-  for (let i = 0; i < arr.length; i++) {
-    const value = arr[i];
-    countMap[value] = (countMap[value] || 0) + 1;
-    if (countMap[value] > maxCount) {
-      maxCount = countMap[value];
-      modeValue = value;
-    }
-  }// Check if there is a clear mode or multiple modes
-  const modeOccurrences = Object.values(countMap).filter(count => count === maxCount);
-  if (modeOccurrences.length === 1) {
-    return modeValue;
-  } else {
-    return null;
-  }
-}
-Object.entries("ATGCCGGTTTT".split("").reduce((bucket, char) => ({ ...bucket, [char]: isNaN(bucket[char]) ? 1 : bucket[char] + 1 }), {})).sort(([, freq1], [, freq2]) => freq2 - freq1)[0][0]
-console.log(mode([1, 2, 1, 4, 5, 6, 2, 1])); // 1
-console.log(mode([2, 5, 2, 4, 5])); // null
+// function mode(arr) {
+//   if (arr.length === 0) {
+//     return null;
+//   }// Count the occurrences of each element in the array
+//   const countMap = {};
+//   let maxCount = 0;
+//   let modeValue = null;
+//   for (let i = 0; i < arr.length; i++) {
+//     const value = arr[i];
+//     countMap[value] = (countMap[value] || 0) + 1;
+//     if (countMap[value] > maxCount) {
+//       maxCount = countMap[value];
+//       modeValue = value;
+//     }
+//   }// Check if there is a clear mode or multiple modes
+//   const modeOccurrences = Object.values(countMap).filter(count => count === maxCount);
+//   if (modeOccurrences.length === 1) {
+//     return modeValue;
+//   } else {
+//     return null;
+//   }
+// }
+// Object.entries("ATGCCGGTTTT".split("").reduce((bucket, char) => ({ ...bucket, [char]: isNaN(bucket[char]) ? 1 : bucket[char] + 1 }), {})).sort(([, freq1], [, freq2]) => freq2 - freq1)[0][0]
+// console.log(mode([1, 2, 1, 4, 5, 6, 2, 1])); // 1
+// console.log(mode([2, 5, 2, 4, 5])); // null
+
+// function compoundedReturn(amount, interest, n) {
+//   const a = amount
+//   const b = interest
+//   const c = n
+//   for (let i = 0; i < c; i++) {
+//     a = periodReturn(a, b / 100)
+//   }
+//   return a
+// }
+// console.log(
+//   compoundedReturn(100, 1, 1)
+// );
+// console.log(
+//   compoundedReturn(100, 10, 1)
+// );
+// console.log(
+//   compoundedReturn(100, 10, 2)
+// );
+
+// function compoundedReturn(amount, interest, n) {
+//   // Convert interest rate to decimal
+//   interest = interest / 100;
+
+//   // Compute compounded return
+//   let totalAmount = amount;
+//   for (let i = 0; i < n; i++) {
+//     totalAmount += totalAmount * interest;
+//   }
+
+//   // Round the result to 2 decimal places
+//   totalAmount = Math.round(totalAmount * 100) / 100;
+
+//   return totalAmount;
+// }
+
+// // Example usage
+// console.log(compoundedReturn(100, 1, 1));  // Output: 1157.63
+// console.log(compoundedReturn(100, 10, 1));  // Output: 1157.63
+// console.log(compoundedReturn(100, 10, 2));  // Output: 1157.63
