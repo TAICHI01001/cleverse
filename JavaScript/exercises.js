@@ -664,9 +664,9 @@
 //   }
 
 //   const transposed = []
-//   for (let i = 0; i < width; i++) { //width=3 i=0<3 
+//   for (let i = 0; i < width; i++) { //width=3 i=0<3
 //     const row = []
-//     for (let j = 0; j < height; j++) { //create height round 3   
+//     for (let j = 0; j < height; j++) { //create height round 3
 //       const index = j * width + i //first index = 0*3+0 second index = 1*3+0 third index=2*3+0
 //       row.push(bits[index])
 //     }
@@ -679,3 +679,64 @@
 // const height = 4;;
 // const result = transpose(bits, width, height)
 // console.log(result);
+
+//TODO Topic number
+// function summarize(text, trail, len) {
+//   //trail = "..."
+//   if (len < 1) { // 20<1 = false ,len = 15
+//     return "";
+//   }
+//   if (text.length <= len) { //"Hello World!" =12<=15
+//     return text; //text = "Hello World!" =15
+//   }
+//   let summary = text.substring(0, len - trail.length);//15-3=12
+
+//   if (summary[summary.length - 1] === " ") {//summary=12[]
+//     summary = summary.substring(0, summary.length - 1);//0,
+//   }
+//   summary += trail;
+//   if (summary.length > len) {
+//     summary = summary.substring(0, len);
+//   }
+//   return summary.trim();
+// }
+// const articleFoo = "Good morning ladies and gentlemen"
+// console.log(summarize(articleFoo, " ...", 25));
+
+
+// const articleFoo = "Good morning ladies and gentlemen";
+// const articleCleverse =
+//   "I am from Cleverse Academy! Today, I’m here to teach you some JavaScript programming";
+
+// const summarize = (text, trail, len) => {
+//   if (text.length === len) {
+//     return text;
+//   } else if (len > 3) {
+//     let summarizeTxt = [];
+//     let wordTokens = text.split(" ");
+//     let wordsAcc = 0;
+
+//     for (let i = 0; i < wordTokens.length; i++) {
+//       const token = wordTokens[i];
+//       if (wordsAcc <= len) {
+//         summarizeTxt.push(token);
+//         wordsAcc += token.length + 1; // plus white space to token
+//         console.log(wordsAcc, len);
+//       }
+//     }
+
+//     summarizeTxt.pop();
+
+//     return summarizeTxt.join(" ") + trail;
+//   } else {
+//     return "";
+//   }
+// };
+
+// console.log(articleCleverse.split(" "));
+// console.log(summarize(articleCleverse, " ...", 30));
+// console.log(summarize(articleFoo, " ...", 2));
+// console.log(summarize(articleFoo, " ...", 10));
+// console.log(summarize(articleFoo, " ...", 20));
+// console.log(summarize(articleFoo, " ...", 25));
+

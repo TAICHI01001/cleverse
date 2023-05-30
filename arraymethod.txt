@@ -19,3 +19,41 @@
       }
   ]
 }
+
+// ทำการเช็ค ว่าจำนวนข้อความที่เราจะกำจัด นั้นต้อง ไม่น้อยกว่า 1 ถ้าน้อยกว่า ส่งค่ากลับเท่ากับ ""
+
+ // ทำการเช็คจำนวนตัวอักษร ว่าน้อยหรือเท่ากับ ความยาวที่เรากำหนดไหม ถ้าจริงตามเงื่อนไข ให้ส่งค่ากลับ เท่ากับ ข้อความที่เรา Input เข้ามาเเต่เเรก
+
+ //กำหนดตัวเเปร summaty = index ตัวอักษรเริ่มต้น,กับจำนวน ความยาวที่กำหนดลบกับ จำนวนที่ทำการตัดข้อความที่จะตัดออกไป ถ้าข้อความนั้นเยอะเกิน ความกว้างที่กำหนด
+
+ // ถ้า index summary-1==="" ให้ summary = summary เริ่มที่ index 0 กับ ความยาวของจำนวน summary-1
+
+ //summary = summary+กับ "..."
+
+ // ถ้าความยาว summary มากกว่า จำนวน ความกว้างที่กำหนดไว้ 
+
+ // summary = summary index 0 ,กับ ความยาวที่กำหนดให้ตั้งเเต่เเรก ให้รีเทิร์น summary
+
+ function summarize(text, trail, len) {
+  if (len < 3 && text.length > len) {
+    return "";
+  }
+
+  if (text.length <= len) {
+    return text;
+  }
+
+  let summary = text.substring(0, len - trail.length);
+
+  while (summary.charAt(summary.length - 1) !== " ") {
+    summary = summary.substring(0, summary.length - 1);
+  }
+
+  summary += trail;
+
+  if (summary.length > len) {
+    summary = summary.substring(0, len);
+  }
+
+  return summary;
+}
