@@ -568,3 +568,114 @@
 // console.log(compoundedReturn(100, 1, 1));  // Output: 1157.63
 // console.log(compoundedReturn(100, 10, 1));  // Output: 1157.63
 // console.log(compoundedReturn(100, 10, 2));  // Output: 1157.63
+
+// function summarize(text, trail, length) {
+//   if (length < 3 && text.length > length) {
+//     return "";
+//   } else if (text.length <= length) {
+//     return text;
+//   } else {
+//     let truncatedText = text.slice(0, length - trail.length - 1); // Subtract 1 for the whitespace
+//     let lastSpaceIndex = truncatedText.lastIndexOf(' ');
+//     if (lastSpaceIndex === -1) {
+//       return "";
+//     } else {
+//       return truncatedText.slice(0, lastSpaceIndex) + trail;
+//     }
+//   }
+// }
+
+// // Example usage:
+// let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod gravida enim. Donec vitae eros nec dui aliquam malesuada. Curabitur tempus mi et sem mattis euismod. Duis vestibulum ipsum quis tellus mattis, sit amet pharetra lacus vestibulum. Quisque ultricies enim quis lacus convallis, eu fermentum lacus porttitor. Phasellus sit amet tincidunt massa, eu rhoncus nulla. Suspendisse aliquet ligula eget urna pellentesque consequat.";
+// let trail = "...";
+// let length = 50;
+
+// let result = summarize(text, trail, length);
+// console.log(result);
+
+
+// function initArr(val, len) {
+//   return Array(len).fill(val);
+// }
+
+// // Example usage:
+// let value = 0;
+// let length = 5;
+
+// let result = initArr(value, length);
+// console.log(result);
+
+
+// function initArr(value, length) {
+//   let arr = [];
+//   for (let i = 0; i < length; i++) {
+//     arr.push(value);
+//   }
+//   return arr;
+// }
+// let value = 0;
+// let length = 5;
+
+// let result = initArr(value, length);
+// console.log(result);
+
+// function initArr(value, length) {
+//   let arr = []
+//   for (i = 0; i < length; i++) {
+//     arr.push(value);
+//   }
+//   return arr;
+// }
+// let value = 0;
+// let length = 5;
+
+// let result = (initArr(value, length))
+// console.log(result);
+
+
+// function transpose(bits, w, h) {
+//   if (bits.length !== w * h) {
+//     throw new Error('Invalid input: bits length does not match the specified dimensions.');
+//   }
+
+//   const transposed = [];
+//   for (let i = 0; i < w; i++) {
+
+//     const row = [];
+//     for (let j = 0; j < h; j++) {
+//       const index = j * w + i;
+//       row.push(bits[index]);
+//     }
+//     transposed.push(row);
+//   }
+
+//   return transposed;
+// }
+// const bits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// const width = 3;
+// const height = 4;
+
+// const result = transpose(bits, width, height);
+// console.log(result);
+
+// function transpose(bits, width, height) {
+//   if (bits.length !== width * height) {
+//     throw new Error('Invalid input: bits length does not match the specified dimensions.');
+//   }
+
+//   const transposed = []
+//   for (let i = 0; i < width; i++) { //width=3 i=0<3 
+//     const row = []
+//     for (let j = 0; j < height; j++) { //create height round 3   
+//       const index = j * width + i //first index = 0*3+0 second index = 1*3+0 third index=2*3+0
+//       row.push(bits[index])
+//     }
+//     transposed.push(row)
+//   }
+//   return transposed
+// }
+// const bits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,]
+// const width = 3;
+// const height = 4;;
+// const result = transpose(bits, width, height)
+// console.log(result);
