@@ -1,0 +1,140 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  /* background: #cbcbcb; */
+  background: #2e2e2e;
+}
+header {
+  position: sticky;
+  top: 10px;
+  background: #9728eb;
+  display: flex;
+  justify-content: space-between;
+}
+.box-left {
+  position: relative;
+  left: 50px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: #fff;
+  margin: 0 15px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 15px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: bold;
+}
+.cursor:hover a {
+  color: #9728eb;
+}
+.box-right {
+  position: relative;
+  right: 50px;
+  display: flex;
+  align-items: center;
+}
+.icon ion-icon {
+  font-size: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 15px;
+  margin: 20px;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: 0.95s;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+}
+.card:hover {
+  transform: rotate();
+  transform: rotateX(20deg) rotateY(-25deg) rotateZ(10deg);
+  box-shadow: 0 0 80px 10px #f8f7f7;
+}
+.img {
+  width: 250px;
+  height: 150px;
+}
+.img img {
+  width: 100%;
+}
+.text {
+  text-align: center;
+}
+#demo {
+  color: #fff;
+  position: relative;
+  top: 2px;
+  display: none;
+  font-size: 30px;
+}
+.cursor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cursor a {
+  color: #000;
+  background: #eee;
+}
+.cursor .icon {
+  transition: 0.75s;
+  transform: translateX(-110px);
+}
+.cursor:hover .icon {
+  color: #9728eb;
+  transform: translateX(0px);
+}
+@media (max-width: 815px) {
+  header {
+    padding: 15px;
+  }
+  ul {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+  .card {
+    margin: 20px 0;
+  }
+  i {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  #demo {
+    display: block;
+  }
+}
