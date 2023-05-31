@@ -2,9 +2,28 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  /* background: #cbcbcb; */
   background: #2e2e2e;
 }
+#menu {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  display: none;
+  background: #fff;
+}
+#menu ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav ul li .item {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 15px;
+}
+
 header {
   position: sticky;
   top: 10px;
@@ -40,7 +59,7 @@ a {
   font-size: bold;
 }
 .cursor:hover a {
-  color: #9728eb;
+  color: #000;
 }
 .box-right {
   position: relative;
@@ -53,6 +72,9 @@ a {
   padding: 0 10px;
   cursor: pointer;
   color: #fff;
+}
+i {
+  display: none;
 }
 .title {
   display: flex;
@@ -68,14 +90,15 @@ section {
   margin: 20px;
 }
 .card {
-  width: 250px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
   background: #fff;
   overflow: hidden;
   border-radius: 15px;
   transition: 0.95s;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
-  margin: 10px;
 }
 .card:hover {
   transform: rotate();
@@ -83,8 +106,8 @@ section {
   box-shadow: 0 0 80px 10px #f8f7f7;
 }
 .img {
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 250px;
 }
 .img img {
   width: 100%;
@@ -96,7 +119,6 @@ section {
   color: #fff;
   position: relative;
   top: 2px;
-  display: none;
   font-size: 30px;
 }
 .cursor {
@@ -113,15 +135,21 @@ section {
   transform: translateX(-110px);
 }
 .cursor:hover .icon {
-  color: #9728eb;
   transform: translateX(0px);
+  color: #000;
 }
-@media (max-width: 815px) {
+
+@media (max-width: 1080px) {
+  section {
+    width: 100%;
+    margin: auto auto;
+  }
   header {
     padding: 15px;
   }
   ul {
     display: none;
+    transition: 1s;
   }
   .title {
     text-align: center;
@@ -130,11 +158,32 @@ section {
     margin: 20px 0;
   }
   i {
+    color: #fff;
     display: block;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
   }
+}
+@media (max-width: 748px) {
+}
+@media (max-width: 390px) {
   #demo {
-    display: block;
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    position: relative;
+    right: 50px;
+  }
+  i {
+    display: none;
   }
 }

@@ -1,3 +1,47 @@
+
+const obj ={
+  name:"TaiChi",
+  age:19,
+  language:"THAI",
+  gender:"male"
+}
+let txt=""
+for(let i in obj){
+  txt+=obj[i]+"<br>";
+}
+const x = txt
+console.log(x);
+document.getElementById("demo").innerHTML=x
+
+function onClick(){
+  let x = document.getElementById("ul")
+  x.style.display="block"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const school = {
 //   student: [{ name: "TaiChi" }, { age: 19 }],
 //   teacher: [{ name: "SomChai" }, { name: "Pong" }],
@@ -19,33 +63,33 @@
 //   return arr.map((v) => people(v))
 // }
 
-const obj = {
-  name: "TaiChi",
-  age: 19,
-  born: 2547,
-  Company: "Cleaves Academy"
-}
+// const obj = {
+//   name: "TaiChi",
+//   age: 19,
+//   born: 2547,
+//   Company: "Cleaves Academy"
+// }
 
 // for (z in obj) {
 //   console.log(z, obj[z])
 // }
 
-const man = {
-  student: [{
-    name: "TaiChi",
-    age: 19,
-    born: 2547,
-    fovTeacher: {
-      name: "foo",
-      age: 70,
-      children: [
+// const man = {
+//   student: [{
+//     name: "TaiChi",
+//     age: 19,
+//     born: 2547,
+//     fovTeacher: {
+//       name: "foo",
+//       age: 70,
+//       children: [
         
-      ]
-    }
-  }, {
-    name: "TaiChi2",
-    age: 19,
-    born: 2549
-  }],
-}
-console.log(man.student[0].name, man.student[1].born, man.student[0].age)
+//       ]
+//     }
+//   }, {
+//     name: "TaiChi2",
+//     age: 19,
+//     born: 2549
+//   }],
+// }
+// console.log(man.student[0].name, man.student[1].born, man.student[0].age)
