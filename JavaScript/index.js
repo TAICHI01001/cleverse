@@ -1,75 +1,32 @@
-const number = BigInt("98765432109876543210")
-const number2 = 2**53
+const frontendInput = document.getElementById("inputFont")
 
-console.log(number);
-console.log(number2);
+const frontendButton = document.getElementById("addFont")
 
+const frontendMilestonesList = document.getElementById("orderFont")
 
+frontendButton.addEventListener("click", (e) => {
+  e.preventDefault()
 
+  const newList = document.createElement("li")
+  newList.textContent = frontendInput.value
 
-
-
-
-
-
-
+  frontendMilestonesList.appendChild(newList)
 
 
+})
 
+const backendInput = document.getElementById("inputBack")
 
+const backendButton = document.getElementById("addBack")
 
+const backendMilestonesList = document.getElementById("orderBack")
 
+backendButton.addEventListener("click", (e) => {
+  e.preventDefault()
 
+  const newList = document.createElement("li")
 
+  newList.textContent = backendInput.value
 
-// function grade(score) {
-//   if (score < 0 || score > 100) {
-//     console.log("pleases input you score again");
-//     return
-//   }
-
-
-
-//   if (score <= 49) {
-//     console.log("grade F")
-//   }
-//   else if (score <= 59) {
-//     console.log("grade D")
-//   }
-//   else if (score <= 69) {
-//     console.log("grade C")
-//   }
-//   else if (score <= 79) {
-//     console.log("grade B")
-//   }
-//   else if (score > 80 || score <= 100) {
-//     console.log("grade A")
-//   }
-//   else {
-//     console.log("input you again")
-//   }
-// }
-// grade(81)
-
-// grade = (score) => {
-//   if (score <= 49) {
-//     console.log("grade F")
-//   }
-//   else if (score <= 59) {
-//     console.log("grade D")
-//   }
-//   else if (score <= 69) {
-//     console.log("grade C")
-//   }
-//   else if (score <= 79) {
-//     console.log("grade B")
-//   }
-//   else if (score > 80 || score <= 100) {
-//     console.log("grade A")
-//   }
-//   else {
-//     console.log("input you again")
-//   }
-// }
-// grade(74)
-
+  backendMilestonesList.appendChild(newList)
+})

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+section {
+  background: #eee;
+  padding: 15px;
+}
+section h1 {
+  text-align: center;
+  padding: 10px;
+}
+section input {
+  padding: 5px;
+}
+
+section button {
+  padding: 5px;
+}
+section ol {
+  padding: 20px;
+}

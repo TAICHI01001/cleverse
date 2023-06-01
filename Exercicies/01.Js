@@ -3,40 +3,47 @@
 // function add(a, b) {
 //   return a + b;
 // }
-// 1.1.1 How many parameters add accepts? Ans 2 parameters
+// 1.1.1 How many parameters add accepts? 
+//TODO Ans 2 parameters
 
-// 1.1.2 What are the possible return types of add? Ans is possible String and Number
+// 1.1.2 What are the possible return types of add? //TODO Ans is possible String and Number
 
-// 1.1.3 What is the return value of add(1, 2)? Ans 3
+// 1.1.3 What is the return value of add(1, 2)? 
+//TODO Ans 3
 
-// 1.1.4 What is the return value of add(1, "2")? Ans "12" String
+// 1.1.4 What is the return value of add(1, "2")?
+//TODO Ans "12" String
 
-// 1.1.5 What is the return value of add("foo", "bar", "baz")? Ans "foobar"
+// 1.1.5 What is the return value of add("foo", "bar", "baz")?
+//TODO Ans "foobar"
 
-// 1.1.6 What is the return value of add(1, 2, 3)? Ans 3
+// 1.1.6 What is the return value of add(1, 2, 3)? //TODO Ans 3
 
-// 1.1.7 What is the return value of add(10, add(1, 2, 3))? Ans 13
+// 1.1.7 What is the return value of add(10, add(1, 2, 3))? //TODO Ans 13
 
 //TODO 1.2
 // function add(a, b = 10, c = 20) {
 //   return a + b + c;
 // }
-// 1.2.1 How many arguments add accepts? Ans 2 arguments
+// 1.2.1 How many arguments add accepts? 
+//TODO Ans 2 arguments
 
 // 1.2.2 What is the return value of add(1, 2)? Ans 23
 
-// 1.2.3 What is the return value of add(1)? Ans 31
+// 1.2.3 What is the return value of add(1)? 
+//TODO Ans 31
 
-// 1.2.4 What is the return value of add(10, add(1, 2, 3))? Ans 16
+// 1.2.4 What is the return value of add(10, add(1, 2, 3))? //TODO Ans 16
 
 //TODO 1.3
 // function sum(...numbers) {
 
 // }
 
-// 1.3.1 What is the variable type of numbers in sum's body?  Ans Array
+// 1.3.1 What is the variable type of numbers in sum's body?  //TODO Ans Array
 
-// 1.3.2 Implement sum with the above function signature. Ans  let sum = 0;
+// 1.3.2 Implement sum with the above function signature.
+//TODO Ans  let sum = 0;
 // for (let i = 0; i < numbers.length; i++) {
 //   sum += numbers[i]
 // }
@@ -44,20 +51,20 @@
 // console.log(sum(10,20,30));
 
 //TODO 2.1
-function isNeg(n) {
-  return n < 0;
-}
+// function isNeg(n) {
+//   return n < 0;
+// }
 
-// 2.1.1 How many ways can we rewrite isNeg as an arrow function? (assuming we keep the expression 
-// n < 0 unchanged) Ans const isNeg = (n) =>{return n<0}
+// 2.1.1 How many ways can we rewrite isNeg as an arrow function? (assuming we keep the expression
+// n < 0 unchanged) //TODO Ans const isNeg = (n) =>{return n<0}
 
-// TODO 2.1.2 What is the least verbose way (least characters used) to rewrite isNeg as an arrow function? 
+// TODO 2.1.2 What is the least verbose way (least characters used) to rewrite isNeg as an arrow function?
 
 // Now, if we have this function:
 
-function assignLegalAge(obj) {
-  obj.age = 18;
-}
+// function assignLegalAge(obj) {
+//   obj.age = 18;
+// }
 // assignLegalAge takes in an object obj and writes property obj.age to 18.
 
 // 2.1.3 How many ways can we rewrite assignLegalAge as an arrow function? (assuming we keep the statement obj.age = 18; unchanged)
@@ -65,7 +72,7 @@ function assignLegalAge(obj) {
 // const obj = {
 //   age: 18
 // }
-// Ans const assignLegalAge = (obj) => { obj.age = 18 }
+//TODO Ans const assignLegalAge = (obj) => { obj.age = 18 }
 
 // TODO 2.1.4 What is the least verbose way (least characters used) to rewrite assignLegalAge as an arrow function? TODO
 
@@ -75,9 +82,10 @@ function assignLegalAge(obj) {
 // 2.2.1 Rewrite the following snippet with arrow function:
 
 //TODO 2.3
-// 2.3.1 What is a method? Ans It is build-in Function
+// 2.3.1 What is a method? //TODO Ans It is build-in Function
 //
 // 2.3.2 Give 3 examples of methods on JavaScript string type
+//TODO Ans
 // for example 1
 // let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 // let length = text.length
@@ -95,6 +103,7 @@ function assignLegalAge(obj) {
 
 // 2.3.3 Give 3 examples of methods on JavaScript Array type
 
+//TODO Ans
 // for example 1
 // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 // let sum = 0
@@ -110,7 +119,7 @@ function assignLegalAge(obj) {
 // for example 2
 // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 // function push(arr) {
-//   let num = [8, 2, 0,]
+//   let data = [8, 2, 0,]
 //   for (let i = 0; i < arr.length; i++) {
 //     num.push(i)
 //   }
@@ -119,19 +128,16 @@ function assignLegalAge(obj) {
 // console.log(push(arr));
 
 // for example 3
-const obj = {
-  name: "TaiChi",
-  weight: 57,
-  height: 165 + "cm",
-  age: 18,
-  gender: "male",
-}
-function pop(obj) {
-  newObj = {
-  }
-  for (let i = 0; i < obj.length; i++) {
-    newObj.pop(i)
-  }
-  return newObj
-}
-console.log(pop(obj));
+// const arr1 = [5, 8, 7, 9, 6, 1, 3, 4, 0, 5, 7, 4, 3]
+// const arr2 = "Hello World!"
+// const arr3 = arr2.split('')
+// let newArr1 = (arr1.concat(arr3))
+// let newArr2 = newArr1.sort()
+// console.log(newArr2);
+
+//TODO 2.4
+// 2.4.1 What is the return value of a callback function passed into Array.filter method?
+
+// 2.4.2 What is the return type of the Array.filter method? //TODO Ans type of array method
+
+// TODO 2.5
