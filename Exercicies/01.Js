@@ -43,7 +43,7 @@
 // 1.3.1 What is the variable type of numbers in sum's body?  //TODO Ans Array
 
 // 1.3.2 Implement sum with the above function signature.
-// TODO Ans  
+// TODO Ans
 // const sum = (...numbers) => {
 //   return numbers.reduce((total, current) => total + current);
 // };
@@ -170,8 +170,6 @@
 // 2.5.1 Implement cb as an anonymous arrow function such that result is [1, 3, 5].
 // TODO Ans
 // const numbers = [10, 20, 30, 40, 50];
-// const result = numbers.map((n) => {
-//   return n / 10
-// })
+// const result = numbers.map((n) => (n / 10))
 // const Answer = result.filter((n) => (n % 2 === 1))
 // console.log(Answer);
